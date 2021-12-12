@@ -1,0 +1,120 @@
+<html>
+        <script src="javaRPG.js"></script>
+
+        <head>
+
+        <title>RPG Battle</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+
+        
+        .interface{background-image:url(landscape.jpg);
+	        background-size: cover ;
+	        border : solid black ;
+	        display: flex;
+	        justify-content: space-between;
+	        flex-direction: column;
+	        width: 1500px;
+	        height: 1300px; 
+        }      
+        .ZoneDeCombat{display: flex;
+                align-items:center;
+                justify-content: space-around;
+        }
+        .monstre {display:flex ;
+                justify-content: right;
+                flex-direction: column;
+        }
+        .heros {display:flex;
+                justify-content: center;
+                flex-direction: column;
+        }        
+        .titre{ border: 2px solid black;
+                color:black;
+                background-color: rgb(235, 202, 111);
+                margin: 20px;margin: auto;
+                width: 20%;
+                text-align: center;
+                padding: 20px;
+        }        
+        .basDeInterface{border: 2px solid rgb(255, 255, 255);
+                        flex-direction: center;}
+                .helios{border: 2px solid rgb(255, 255, 255);
+                        width: 25%;text-align: center;
+                        background-color: rgb(235, 202, 111);
+                                                                     
+                }
+                .dracula{border: 2px solid rgb(255, 255, 255);
+                        width: 25%;text-align: center;
+                        background-color: rgb(235, 202, 111);
+                }
+                .samourai{border: 2px solid rgb(255, 255, 255);
+                        width: 25%;text-align: center;
+                        background-color: rgb(235, 202, 111);
+                }
+                .legolas{border: 2px solid rgb(255, 255, 255);
+                        width: 25%;text-align: center;
+                        background-color: rgb(235, 202, 111);
+                }
+        .options {
+                display : flex; justify-content :center; 
+                padding : 30px; border : solid white; 
+                border-radius: 5px; 
+                background: rgb(235, 202, 111); 
+                color :rgb(0, 0, 0);
+                
+}
+        #nomHero {
+                display: flex;
+                justify-content: center;
+                padding : 20px;
+        }
+
+        #zombie1{
+                display: flex;
+                flex-direction: column-reverse;
+                
+        }
+        
+        </style>
+
+        </head>
+
+        <body>
+                <div class ="interface">
+                        <div class="titre">
+                                <h1>RPG</h1>
+                        </div>
+                        <div class="ZoneDeCombat">
+                                <div class="heros">
+
+                                        <div id="spartiate"><img src="h4.png" height=200px/></div>
+                                        <div id="vampire"><img src="h2.png" height=200px/></div>
+                                        <div id="ninja"><img src="h1.png" height=200px/></div>
+                                        <div id="archer"><img src="archer.png" height=200px/></div>
+                                </div>                       
+                                <div class="monstre">
+                                        
+                                        <div id="mage"><img src="mponstre1.png" height=300px/></div>
+                                        <div id="zombie1"><img src="zombie3.png" height=200px/></div>
+                                        <div id="zombie2"><img src="zombie2.png"height=200px/></div>
+                                </div>
+                        </div>
+                        <div class="basDeInterface">
+                        <div id="nomHero">
+                                <div class="helios"><h5><input type="button" value="HELIOS"></h5></div>
+                                <div class="dracula"><h6><input type="button" value="DRACULA"></h6></div>
+                                <div class="samourai"><h7><input type="button" value="SAMOURAI"></h7></div>
+                                <div class="legolas"><h8><input type="button" value="LEGOLAS"></h8></div>  
+                        </div>              
+                        
+                                <div class="options">
+                                HP: 200/200&ensp;HP: 200/200&emsp;&ensp;HP: 200/200&ensp;HP: 200/200<br>
+                                Mana: 100/100&ensp;Mana: 100/100&ensp;Mana: 100/100&ensp;Mana: 100/100<br>
+                                <br>&emsp;<strong>Actions :</strong>
+                                &emsp;<input type="button" value="Attaque">&emsp;<input type="button" value="Defense">&emsp;<input type="button" value="attaque special"></div>                       
+                        </div>
+                </div>                                                       
+                </body>
+               
+</html>
